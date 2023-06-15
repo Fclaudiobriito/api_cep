@@ -16,36 +16,36 @@
 
         <form class="row g-3 p-5" >
             <h1>API Rest Via CEP</h1>
-            <div class="col-md-1">
-            <label for="inputEmail4" class="form-label">CEP</label>
-            <input type="email" class="form-control" id="inputEmail4">
-            </div>
-            <div class="col-md-5">
-            <label for="inputPassword4" class="form-label">Rua</label>
-            <input type="password" class="form-control" id="inputPassword4">
-            </div>
-            <div class="col-1">
-            <label for="inputNumero" class="form-label">Numero</label>
-            <input type="text" class="form-control" id="inputNumero" placeholder="">
-            </div>
-            <div class="col-7">
-            <label for="inputComplement" class="form-label">Complemento</label>
-            <input type="text" class="form-control" id="inputComplement">
+            <div class="col-md-2">
+            <label for="cep" class="form-label">CEP</label>
+            <input type="cep" class="form-control" id="cep" onblur="findCep()">
             </div>
             <div class="col-md-7">
-            <label for="inputCidade" class="form-label">Cidade</label>
-            <input type="text" class="form-control" id="inputCidade">
+            <label for="logradouro" class="form-label">Logradouro</label>
+            <input type="logradouro" class="form-control" id="logradouro">
             </div>
-            <div class="col-md-1">
-            <label for="estado" class="form-label">Estado</label>
-            <select id="estado" class="form-select">
+            <div class="col-1">
+            <label for="numero" class="form-label">N°</label>
+            <input type="text" class="form-control" id="numero" placeholder="">
+            </div>
+            <div class="col-10">
+            <label for="complemento" class="form-label">Complemento</label>
+            <input type="text" class="form-control" id="complemento">
+            </div>
+            <div class="col-md-6">
+            <label for="bairro" class="form-label">Bairro</label>
+            <input type="text" class="form-control" id="bairro">
+            </div>
+            <div class="col-md-2">
+            <label for="uf" class="form-label">UF</label>
+            <select id="uf" class="form-select">
                 <option selected>Selecione</option>
                 <option>...</option>
             </select>
             </div>
-            <div class="col-md-1">
-                <label for="inputLocalidade" class="form-label">Localidade</label>
-                <select id="inputLocalidade" class="form-select">
+            <div class="col-md-2">
+                <label for="localidade" class="form-label">Localidade</label>
+                <select id="localidade" class="form-select">
                     <option selected>Selecione</option>
                     <option>...</option>
                 </select>
